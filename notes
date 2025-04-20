@@ -1,0 +1,128 @@
+Yes, there are several other frameworks, formats, templates, and "languages" designed to describe requirements, processes, or behaviors in a structured, yet natural language or semi-formal way. Here are some notable examples beyond Gherkin, User Stories, and SMART:
+
+1. Given-When-Then (GWT)
+Closely related to Gherkin, it's a pattern for writing acceptance criteria in behavior-driven development (BDD).
+2. Use Case Narratives / Templates
+Structured descriptions of system interactions, often using templates like "Actor does X, System responds with Y".
+3. INVEST
+A set of criteria for writing good User Stories: Independent, Negotiable, Valuable, Estimable, Small, Testable.
+4. MoSCoW Method
+Prioritization framework: Must have, Should have, Could have, Won't have.
+5. Job Stories
+"When [situation], I want to [motivation], so I can [expected outcome]".
+6. Feature Injection
+"In order to [business value], as a [role], I want [feature]".
+7. Acceptance Test-Driven Development (ATDD) Formats
+Natural language formats for acceptance criteria, sometimes using tables or scenario outlines.
+8. Planguage
+A precise, semi-formal language for requirements specification, created by Tom Gilb.
+9. FURPS/FURPS+
+Framework for classifying requirements: Functionality, Usability, Reliability, Performance, Supportability (+ others).
+10. Scenario Mapping / Event Storming
+Visual and textual approaches to describing processes and requirements.
+11. RUP Use Case Templates
+Rational Unified Process (RUP) provides structured templates for use cases.
+12. Structured English / Pseudocode
+Used in business analysis to describe processes in a controlled subset of English.
+13. BDD Tools Languages (besides Gherkin)
+Cucumber, SpecFlow, JBehave, etc., each with their own flavor of scenario description.
+14. Decision Tables & Trees
+Tabular or tree-based formats for specifying rules and outcomes.
+15. 5W1H (Who, What, When, Where, Why, How)
+A questioning framework for requirements elicitation and documentation.
+If you are interested in a particular context (e.g., software requirements, business process modeling, testing), let me know and I can tailor the list or provide examples for each!
+
+
+ertainly! Here’s a detailed overview of major frameworks, formats, templates, and “languages” used to describe requirements and processes in a structured, yet natural language or semi-formal way. I’ll organize them by their primary context (software requirements, business analysis, process modeling, testing, etc.), and provide examples or key characteristics for each.
+
+1. Software Requirements & User Needs
+a. User Stories
+Format: As a [type of user], I want [goal] so that [reason].
+Purpose: Captures a feature from the end-user’s perspective.
+Best For: Agile development, backlog items.
+Example: As a registered user, I want to reset my password so that I can regain access if I forget it.
+b. INVEST Criteria (for User Stories)
+Acronym: Independent, Negotiable, Valuable, Estimable, Small, Testable.
+Purpose: Ensures User Stories are well-formed and actionable.
+c. Job Stories
+Format: When [situation], I want to [motivation], so I can [expected outcome].
+Purpose: Focuses on context and motivation, not personas.
+Example: When I forget my password, I want to receive a reset link, so I can access my account again.
+d. Feature Injection
+Format: In order to [achieve some value], as a [role], I want [feature].
+Purpose: Makes the business value explicit.
+Example: In order to reduce support calls, as a user, I want to reset my password online.
+e. MoSCoW Prioritization
+Categories: Must have, Should have, Could have, Won’t have (this time).
+Purpose: Prioritizes requirements for releases.
+2. Structured Process & Behavior Description
+a. Gherkin / Given-When-Then (GWT)
+Format: Given [context], When [event], Then [outcome].
+Purpose: Describes scenarios for BDD (Behavior-Driven Development).
+Example:
+CopyInsert
+Given a user is logged in
+When they request a password reset
+Then they receive a reset email
+Tools: Cucumber, SpecFlow, Behave, JBehave.
+b. Acceptance Test-Driven Development (ATDD)
+Format: Natural language, often tabular or scenario-based.
+Purpose: Defines acceptance criteria before development.
+Example: See Gherkin above.
+c. Use Case Narratives / Templates
+Format: Actor, Precondition, Main Flow, Alternate Flows, Postcondition.
+Purpose: Documents system interactions in detail.
+Example:
+Actor: User
+Precondition: User has an account
+Main Flow: User enters email, system sends reset link, etc.
+d. Rational Unified Process (RUP) Use Case Templates
+Format: Structured template with sections for actors, triggers, flows, exceptions, etc.
+Purpose: Standardizes use case documentation in RUP methodology.
+3. Requirements Specification & Analysis
+a. Planguage
+Creator: Tom Gilb
+Purpose: Precise, quantifiable requirements using a controlled vocabulary.
+Example:
+CopyInsert
+Security.Level: Must resist 99.99% of unauthorized access attempts per year.
+b. FURPS/FURPS+
+Acronym: Functionality, Usability, Reliability, Performance, Supportability (+ others: Design, Implementation, Interface, Physical).
+Purpose: Categorizes requirements for completeness.
+c. 5W1H (Who, What, When, Where, Why, How)
+Purpose: Ensures all aspects of a requirement or process are considered.
+Example: Who needs the feature? What does it do? When is it used? etc.
+4. Business Process Modeling & Analysis
+a. Structured English / Pseudocode
+Purpose: Describes logic/processes in a controlled, semi-formal subset of English.
+Example: IF user is logged in THEN allow password reset.
+b. Scenario Mapping / Event Storming
+Purpose: Visual and textual mapping of business processes, often with sticky notes or diagrams.
+Example: Steps in a customer journey, mapped out with events and actions.
+c. Decision Tables & Trees
+Format: Tabular or tree diagrams showing conditions and resulting actions.
+Purpose: Clarifies complex business rules.
+Example: | Condition A | Condition B | Action | |-------------|-------------|------------| | Yes | No | Action 1 | | No | Yes | Action 2 |
+5. Testing & Quality Assurance
+a. BDD Tool Languages
+Examples: Gherkin (Cucumber), SpecFlow, JBehave, Behave.
+Purpose: Write executable specifications in natural language.
+b. Acceptance Criteria (Custom Formats)
+Format: Lists or bullet points describing what must be true for a feature to be accepted.
+Example:
+The user receives a reset email within 5 minutes.
+The reset link expires after 24 hours.
+6. Miscellaneous & Supporting Frameworks
+a. Event-Condition-Action (ECA) Rules
+Format: When [event] and [condition], do [action].
+Purpose: Used in business rules engines and process automation.
+b. S.M.A.R.T. Goals
+Acronym: Specific, Measurable, Achievable, Relevant, Time-bound.
+Purpose: Ensures goals (including requirements) are clear and actionable.
+Summary Table
+| Name/Framework | Main Use | Example/Format | |------------------------ |---------------------------|---------------------------------------------------------| | User Stories | Agile requirements | As a [user], I want [goal], so that [reason] | | INVEST | User story quality | Criteria for good stories | | Job Stories | Context-driven needs | When [situation], I want [motivation], so I can [outcome]| | Feature Injection | Value-driven features | In order to [value], as a [role], I want [feature] | | MoSCoW | Prioritization | Must, Should, Could, Won’t have | | Gherkin/GWT | BDD scenarios | Given, When, Then | | Use Case Narratives | Detailed interactions | Actor, Flow, Exception | | Planguage | Quantified requirements | Security.Level: Must resist 99.99%... | | FURPS/FURPS+ | Requirement categories | Functionality, Usability, etc. | | 5W1H | Requirement completeness | Who, What, When, Where, Why, How | | Structured English | Business logic | IF ... THEN ... | | Scenario Mapping | Process visualization | Event flows, sticky notes | | Decision Tables/Trees | Business rules | Tabular/tree logic | | Acceptance Criteria | Testable requirements | List of pass/fail conditions | | ECA Rules | Automation | When X and Y, do Z | | SMART Goals | Goal-setting | Specific, Measurable, etc. |
+
+If you want concrete examples, template files, or guidance on how to choose or apply these in your context (e.g., software, business process, QA), let me know!
+
+
+

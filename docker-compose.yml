@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:17.4
+    container_name: postgres_db_andamio
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_andamio:/var/lib/postgresql/data
+
+volumes:
+  postgres_data_andamio:
