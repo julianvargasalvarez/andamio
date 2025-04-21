@@ -18,7 +18,7 @@ config :andamio, Andamio.Repo,
 config :andamio, AndamioWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
   secret_key_base: "E8bkGwktcPS4pGNsNM81l04ySn+xDo/JKY8pqsoUVWTUa1N/RgrrQ/x5ExWEfaIi",
-  server: false
+  server: true
 
 # In test we don't send emails
 config :andamio, Andamio.Mailer, adapter: Swoosh.Adapters.Test
