@@ -16,9 +16,13 @@ config :andamio, Andamio.Repo,
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
 config :andamio, AndamioWeb.Endpoint,
-  http: [ip: {127, 0, 0, 1}, port: 4002],
+  http: [
+    ip: {127, 0, 0, 1},
+    port: 4002
+  ],
   secret_key_base: "E8bkGwktcPS4pGNsNM81l04ySn+xDo/JKY8pqsoUVWTUa1N/RgrrQ/x5ExWEfaIi",
   server: true
+
 
 # In test we don't send emails
 config :andamio, Andamio.Mailer, adapter: Swoosh.Adapters.Test
@@ -43,6 +47,11 @@ config :wallaby,
   selenium: [
     remote_url: "http://localhost:4444/wd/hub/",
     capabilities: %{
-      browserName: "firefox",
+      "browserName" => "chrome",
+      "goog:chromeOptions" => %{
+        args: [
+          "--headless", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage"
+        ]
+      }
     }
   ]
