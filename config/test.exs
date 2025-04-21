@@ -17,7 +17,7 @@ config :andamio, Andamio.Repo,
 # you can enable the server option below.
 config :andamio, AndamioWeb.Endpoint,
   http: [
-    ip: {127, 0, 0, 1},
+    ip: {0, 0, 0, 0},
     port: 4002
   ],
   secret_key_base: "E8bkGwktcPS4pGNsNM81l04ySn+xDo/JKY8pqsoUVWTUa1N/RgrrQ/x5ExWEfaIi",
@@ -48,10 +48,5 @@ config :wallaby,
     remote_url: "http://localhost:4444/wd/hub/",
     capabilities: %{
       "browserName" => "chrome",
-      "goog:chromeOptions" => %{
-        args: [
-          "--headless", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage"
-        ]
-      }
     }
   ]
