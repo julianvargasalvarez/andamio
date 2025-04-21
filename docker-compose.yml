@@ -10,5 +10,16 @@ services:
     volumes:
       - postgres_data_andamio:/var/lib/postgresql/data
 
+  selenium:
+    image: selenium/standalone-firefox:96.0.3-20220208
+    ports:
+      - "4444:4444"
+
+  test:
+    depends_on:
+      - selenium
+    command: mix test
+
+
 volumes:
   postgres_data_andamio:
