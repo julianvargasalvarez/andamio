@@ -11,9 +11,10 @@ services:
       - postgres_data_andamio:/var/lib/postgresql/data
 
   selenium:
-    image: selenium/standalone-firefox:96.0.3-20220208
+    image: selenium/standalone-chrome:101.0.4951.41
     ports:
       - "4444:4444"
+    network_mode: host
 
 volumes:
   postgres_data_andamio:
