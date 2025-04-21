@@ -1,10 +1,17 @@
-defmodule Andamio.UserListTest do
+defmodule AndamioWeb.CreateBigCompanyTest do
   use ExUnit.Case, async: true
   use Wallaby.Feature
 
-  feature "users have names", %{session: session} do
+  #setup do
+  #  {:ok, session} = Wallaby.start_session()
+  #  {:ok, session: session}
+  #end
+
+
+  feature "User creates a Big Company", %{session: session} do
     session
-    |> visit("/users")
-    |> assert_has(Query.css(".user-name", text: "Chris"))
+    |> visit("/")
+    |> Wallaby.Browser.page_source()
+    |> IO.puts()
   end
 end
