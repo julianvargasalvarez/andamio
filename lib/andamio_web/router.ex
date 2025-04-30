@@ -18,6 +18,7 @@ defmodule AndamioWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    resources "/businesses", BusinessController
   end
 
   # Other scopes may use custom stacks.

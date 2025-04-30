@@ -1,0 +1,24 @@
+<.header>
+  These are your Big Companies
+  Listing Businesses
+  <:actions>
+    <.link href={~p"/businesses/new"}>
+      <.button>New Business</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="businesses" rows={@businesses} row_click={&JS.navigate(~p"/businesses/#{&1}")}>
+  <:col :let={business} label="Name">{business.name}</:col>
+  <:action :let={business}>
+    <div class="sr-only">
+      <.link navigate={~p"/businesses/#{business}"}>Show</.link>
+    </div>
+    <.link navigate={~p"/businesses/#{business}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={business}>
+    <.link href={~p"/businesses/#{business}"} method="delete" data-confirm="Are you sure?">
+      Delete
+    </.link>
+  </:action>
+</.table>

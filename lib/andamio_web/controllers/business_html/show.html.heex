@@ -1,0 +1,15 @@
+<.header>
+  Business {@business.id}
+  <:subtitle>This is a business record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/businesses/#{@business}/edit"}>
+      <.button>Edit business</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Name">{@business.name}</:item>
+</.list>
+
+<.back navigate={~p"/businesses"}>Back to businesses</.back>

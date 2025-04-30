@@ -1,0 +1,8 @@
+<.header>
+  Edit Business {@business.id}
+  <:subtitle>Use this form to manage business records in your database.</:subtitle>
+</.header>
+
+<.business_form changeset={@changeset} action={~p"/businesses/#{@business}"} />
+
+<.back navigate={~p"/businesses"}>Back to businesses</.back>
