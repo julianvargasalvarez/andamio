@@ -1,0 +1,7 @@
+Feature Injection Template
+=========================
+
+In order to [achieve some value], as a [role], I want [feature].
+
+Example:
+In order to reduce support calls, as a user, I want to reset my password online.

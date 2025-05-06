@@ -1,0 +1,7 @@
+User Story Template
+===================
+
+As a [type of user], I want [some goal] so that [some reason].
+
+Example:
+As a registered user, I want to reset my password so that I can regain access if I forget it.

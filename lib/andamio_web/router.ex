@@ -18,7 +18,9 @@ defmodule AndamioWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    resources "/businesses", BusinessController
+    resources "/businesses", BusinessController do
+      resources "/canvas", BusinessModelCanvasController, only: [:edit]
+    end
   end
 
   # Other scopes may use custom stacks.

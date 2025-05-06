@@ -1,0 +1,9 @@
+FURPS+ Checklist
+================
+
+- Functionality: [Features, capabilities, security]
+- Usability: [UI design, help, documentation]
+- Reliability: [Frequency of failure, recoverability]
+- Performance: [Speed, efficiency, scalability]
+- Supportability: [Testability, maintainability, adaptability]
+- +: [Design, Implementation, Interface, Physical requirements]

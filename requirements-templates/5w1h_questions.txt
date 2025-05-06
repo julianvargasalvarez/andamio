@@ -1,0 +1,9 @@
+5W1H Questions Template
+=======================
+
+- Who? [Who is involved or affected?]
+- What? [What is to be done?]
+- When? [When does it happen?]
+- Where? [Where does it take place?]
+- Why? [Why is it needed?]
+- How? [How will it be accomplished?]

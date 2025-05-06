@@ -1,0 +1,14 @@
+Use Case Template
+=================
+
+Title: [Use Case Title]
+Actor: [Primary Actor]
+Precondition: [What must be true before starting]
+Trigger: [Event that initiates the use case]
+Main Flow:
+  1. [Step 1]
+  2. [Step 2]
+  ...
+Alternate Flows:
+  - [Describe alternate or exception flows]
+Postcondition: [What must be true after completion]

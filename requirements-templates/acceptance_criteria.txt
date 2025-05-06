@@ -1,0 +1,10 @@
+Acceptance Criteria Template
+===========================
+
+- [Condition that must be met for acceptance]
+- [Another condition]
+- [Edge case or exception]
+
+Example:
+- The user receives a reset email within 5 minutes.
+- The reset link expires after 24 hours.

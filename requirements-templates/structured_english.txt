@@ -1,0 +1,11 @@
+Structured English Template
+==========================
+
+IF [condition]
+  THEN [action]
+  ELSE [alternate action]
+
+Example:
+IF user is logged in
+  THEN allow password reset
+  ELSE prompt for login

@@ -1,0 +1,9 @@
+INVEST Criteria for User Stories
+===============================
+
+- Independent: The story can be developed and delivered separately.
+- Negotiable: Details can be changed through discussion.
+- Valuable: Delivers value to users or stakeholders.
+- Estimable: The team can estimate the size of the story.
+- Small: Can be completed in a short iteration.
+- Testable: Has clear acceptance criteria for testing.

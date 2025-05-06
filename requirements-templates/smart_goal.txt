@@ -1,0 +1,11 @@
+SMART Goal Template
+===================
+
+- Specific: [What exactly do you want to achieve?]
+- Measurable: [How will you measure success?]
+- Achievable: [Is it realistic?]
+- Relevant: [Why is it important?]
+- Time-bound: [What is the deadline?]
+
+Example:
+Increase user password reset success rate from 70% to 90% by end of Q2.

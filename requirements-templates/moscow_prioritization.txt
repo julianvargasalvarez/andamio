@@ -1,0 +1,7 @@
+MoSCoW Prioritization Template
+=============================
+
+- Must have: [List essential requirements]
+- Should have: [List important but not vital requirements]
+- Could have: [List desirable but not necessary requirements]
+- Won't have (this time): [List requirements out of scope for now]

@@ -1,0 +1,7 @@
+Job Story Template
+==================
+
+When [situation], I want to [motivation], so I can [expected outcome].
+
+Example:
+When I forget my password, I want to receive a reset link, so I can access my account again.

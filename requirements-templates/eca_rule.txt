@@ -1,0 +1,7 @@
+Event-Condition-Action (ECA) Rule Template
+==========================================
+
+When [event] and [condition], do [action].
+
+Example:
+When the user clicks 'reset password' and is authenticated, send a reset email.

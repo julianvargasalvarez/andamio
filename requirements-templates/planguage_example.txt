@@ -1,0 +1,8 @@
+Planguage Requirement Example
+============================
+
+Requirement: Security.Level
+Type: Constraint
+Scale: Percentage of unauthorized access attempts resisted
+Goal: 99.99% per year
+Meter: Security audit logs
