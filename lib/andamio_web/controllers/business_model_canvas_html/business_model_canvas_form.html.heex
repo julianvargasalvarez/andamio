@@ -1,0 +1,9 @@
+<.simple_form :let={f} for={@changeset} action={@action} method={@method}>
+  <.error :if={@changeset.action}>
+    Oops, something went wrong! Please check the errors below.
+  </.error>
+  <.input field={f[:description]} type="textarea" label="Business Model Canvas" />
+  <:actions>
+    <.button>Save Business Model Canvas</.button>
+  </:actions>
+</.simple_form>

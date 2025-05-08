@@ -6,6 +6,8 @@ defmodule Andamio.Businesses.Business do
     field :name, :string
 
     timestamps(type: :utc_datetime)
+
+    has_one(:business_model_canvas, Andamio.Businesses.BusinessModelCanvas, on_delete: :delete_all)
   end
 
   @doc false

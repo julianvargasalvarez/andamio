@@ -14,6 +14,8 @@ defmodule AndamioWeb.CreateBigCompanyTest do
 
     session
     |> click(Query.button("Edit Business Model Canvas"))
+
+    session
     |> fill_in(Query.text_field("Business Model Canvas"), with: "
            Business Idea: EcoCourier – Sustainable Package Delivery A courier service that exclusively uses electric bikes and renewable energy-powered micro-hubs to provide eco-friendly and efficient deliveries, catering to businesses and individuals aiming to reduce their carbon footprint.
            1. Key Partners
@@ -66,7 +68,7 @@ defmodule AndamioWeb.CreateBigCompanyTest do
            - Advertising partnerships with eco-conscious brands
            - Premium features (express delivery, custom packaging)
     ")
-    |> click(Query.button("Save"))
-    |> assert_has(Query.text("The canvas has been saved"))
+    |> click(Query.button("Save Business Model Canvas"))
+    |> assert_has(Query.text("Business model canvas updated successfully."))
   end
 end

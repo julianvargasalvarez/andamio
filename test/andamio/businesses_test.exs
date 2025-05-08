@@ -4,7 +4,7 @@ defmodule Andamio.BusinessesTest do
   alias Andamio.Businesses
 
   describe "businesses" do
-    alias Andamio.Businesses.Business
+    alias Andamio.Businesses.{Business, BusinessModelCanvas}
 
     import Andamio.BusinessesFixtures
 
@@ -20,11 +20,15 @@ defmodule Andamio.BusinessesTest do
       assert Businesses.get_business!(business.id) == business
     end
 
-    test "create_business/1 with valid data creates a business" do
+    test "create_business/1 with valid data creates a business and its canvas" do
       valid_attrs = %{name: "some name"}
 
       assert {:ok, %Business{} = business} = Businesses.create_business(valid_attrs)
       assert business.name == "some name"
+
+      # Default model business canvas
+      canvas = Repo.get_by(BusinessModelCanvas, business_id: business.id)
+      assert canvas !== nil
     end
 
     test "create_business/1 with invalid data returns error changeset" do

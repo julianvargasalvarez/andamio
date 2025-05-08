@@ -19,7 +19,8 @@ defmodule AndamioWeb.Router do
 
     get "/", PageController, :home
     resources "/businesses", BusinessController do
-      resources "/canvas", BusinessModelCanvasController, only: [:edit]
+      get "/canvas", BusinessModelCanvasController, :edit
+      put "/canvas", BusinessModelCanvasController, :update
     end
   end
 

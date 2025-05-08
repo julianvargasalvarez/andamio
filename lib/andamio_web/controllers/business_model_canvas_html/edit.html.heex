@@ -1,8 +1,8 @@
 <.header>
-  Edit Business {@business.id}
-  <:subtitle>Use this form to manage business records in your database.</:subtitle>
+  Edit Business model canvas {@business_model_canvas.id}
+  <:subtitle>Use this form to manage business_model_canvas records in your database.</:subtitle>
 </.header>
 
-<.business_form changeset={@changeset} action={~p"/businesses/#{@business}"} />
+<.business_model_canvas_form changeset={@changeset} action={~p"/businesses/#{@business_model_canvas.business_id}/canvas"} method={"put"} />
 
-<.back navigate={~p"/businesses"}>Back to businesses</.back>
+<.back navigate={~p"/businesses/#{@business_model_canvas.business_id}"}>Back to business</.back>
